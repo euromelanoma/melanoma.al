@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta
+      name="description"
+      content="Euromelanoma ekziston për të promovuar dhe shkëmbyer informacion mbi parandalimin e kancerit të lëkurës, diagnostikimin dhe trajtimin e hershëm."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+
+    <title>Homepage - Euromelanoma</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div style="z-index: 2" class="nav-container">
+        <div style="z-index: 2" class="nav">
+          <a href="index.html"
+            ><img class="logo" src="images/logo.svg" alt="logo nav"
+          /></a>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <!-- Home Link -->
+            <a class="main-link" href="index.html">HOME</a>
+          </div>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <!-- Main Link 1 -->
+            <a
+              class="main-link"
+              href="mesoni-mbi-kancerin-e-lekures/mesoni-mbi-kancerin-e-lekures.html"
+              >Mesoni mbi kancerin e lekures
+              <ion-icon name="caret-down-outline"></ion-icon
+            ></a>
+            <div style="z-index: 2" class="subdropdown">
+              <a
+                href="mesoni-mbi-kancerin-e-lekures/shkaktaret/shkaktaret.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown1')"
+                >Shkaktaret <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown1">
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/shkaktaret/rrezet-ultraviolet-dhe-efektet-e-tyre.html"
+                  class="subsublink"
+                  >Rrezet ultraviolet dhe efektet e tyre</a
+                >
+              </div>
+              <a
+                href="mesoni-mbi-kancerin-e-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown2')"
+                >kush eshte i rrezikuar per kancer te lekures
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown2">
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures/melanoma-risk-factors.html"
+                  class="subsublink"
+                  >Melanoma risk factors</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures/non-melanoma-risk-factors.html"
+                  class="subsublink"
+                  >Non-melanoma risk factors</a
+                >
+              </div>
+              <a
+                href="mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/llojet-e-kancerit-te-lekures.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown3')"
+                >llojet e kancerit te lekures
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown3">
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/basaliom.html"
+                  class="subsublink"
+                  >Basaliom</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/actinic-keratosis.html"
+                  class="subsublink"
+                  >actinic keratosis</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/spinaliom.html"
+                  class="subsublink"
+                  >Spinaliom</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/melanoma.html"
+                  class="subsublink"
+                  >Melanoma</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/merkel-cell-carcinoma.html"
+                  class="subsublink"
+                  >Merkel Cell Carcinoma</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/other-types-of-skin-cancer.html"
+                  class="subsublink"
+                  >Other types of skin cancer</a
+                >
+              </div>
+              <a
+                href="mesoni-mbi-kancerin-e-lekures/lezionet-beninje/lezionet-beninje.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown4')"
+                >lezionet beninje <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown4">
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/lezionet-beninje/nishanet.html"
+                  class="subsublink"
+                  >Nishanet</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/lezionet-beninje/skin-tags.html"
+                  class="subsublink"
+                  >Skin tags</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/lezionet-beninje/dermatofibroma.html"
+                  class="subsublink"
+                  >Dermatofibroma</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/lezionet-beninje/hemangioma.html"
+                  class="subsublink"
+                  >Hemangioma</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/lezionet-beninje/angioma.html"
+                  class="subsublink"
+                  >Angioma</a
+                >
+                <a
+                  href="mesoni-mbi-kancerin-e-lekures/lezionet-beninje/keratoza-seborrheike.html"
+                  class="subsublink"
+                  >Keratoza seborrheike</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <a
+              class="main-link"
+              href="parandaloni-kancerin-e-lekures/parandaloni-kancerin-e-lekures.html"
+              >Parandaloni kancerin e lekures
+              <ion-icon name="caret-down-outline"></ion-icon
+            ></a>
+
+            <div style="z-index: 2" class="subdropdown">
+              <a
+                href="parandaloni-kancerin-e-lekures/njihni-fototipin-e-lekures-tuaj.html"
+                class="additional-link"
+                >Njihni fototipin e lekures tuaj</a
+              >
+              <a
+                href="parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/mbroni-lekuren-tuaj.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown6')"
+                >Mbroni lekuren tuaj
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown6">
+                <a
+                  href="parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/babies-and-children.html"
+                  class="subsublink"
+                  >Babies & children</a
+                >
+                <a
+                  href="parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/teenagers.html"
+                  class="subsublink"
+                  >Adoleshente</a
+                >
+                <a
+                  href="parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/te-rriturit.html"
+                  class="subsublink"
+                  >Te rritur</a
+                >
+              </div>
+              <a
+                href="parandaloni-kancerin-e-lekures/nxija-e-lekures-dhe-kabinat-solare.html"
+                class="additional-link"
+                >Nxija e lekures dhe kabinat solare</a
+              >
+            </div>
+          </div>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <a
+              class="main-link"
+              href="kontrolloni-per-kancerin-e-lekures/kontrolloni-per-kancerin-e-lekures.html"
+              >kontrolloni per kancerin e lekures
+              <ion-icon name="caret-down-outline"></ion-icon
+            ></a>
+            <div style="z-index: 2" class="subdropdown">
+              <a
+                href="kontrolloni-per-kancerin-e-lekures/cfare-te-kerkoni.html"
+                class="additional-link"
+                >cfare te kerkoni</a
+              >
+              <a
+                href="kontrolloni-per-kancerin-e-lekures/si-dhe-ku-te-kerkoni.html"
+                class="additional-link"
+                >si dhe ku te kerkoni</a
+              >
+              <a
+                href="kontrolloni-per-kancerin-e-lekures/cfare-te-bejme-tjeter/cfare-te-bejme-tjeter.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown7')"
+                >cfare te bejme tjeter
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown7">
+                <a
+                  href="kontrolloni-per-kancerin-e-lekures/cfare-te-bejme-tjeter/pre-appointment-checklist.html"
+                  class="subsublink"
+                  >Pre-appointment checklist</a
+                >
+                <a
+                  href="kontrolloni-per-kancerin-e-lekures/cfare-te-bejme-tjeter/gjerat-qe-duhet-te-pyesni-mjekun-tuaj.html"
+                  class="subsublink"
+                  >Gjerat qe duhet te pyesni mjekun tuaj</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <a class="main-link" href="rreth-melanomas/rreth-melanomas.html"
+              >rreth euromelanomas
+              <ion-icon name="caret-down-outline"></ion-icon
+            ></a>
+            <div style="z-index: 2" class="subdropdown">
+              <a
+                href="rreth-melanomas/fushatat-tona/fushatat-tona.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown8')"
+                >fushatat tona <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown8">
+                <a
+                  href="rreth-melanomas/fushatat-tona/2024-campana.html"
+                  class="subsublink"
+                  >2024 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2023-campana.html"
+                  class="subsublink"
+                  >2023 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2022-campana.html"
+                  class="subsublink"
+                  >2022 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2021-campana.html"
+                  class="subsublink"
+                  >2021 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2020-campana.html"
+                  class="subsublink"
+                  >2020 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2019-campana.html"
+                  class="subsublink"
+                  >2019 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2018-campana.html"
+                  class="subsublink"
+                  >2018 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2017-campana.html"
+                  class="subsublink"
+                  >2017 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2016-campana.html"
+                  class="subsublink"
+                  >2016 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2015-campana.html"
+                  class="subsublink"
+                  >2015 Campaña</a
+                >
+                <a
+                  href="rreth-melanomas/fushatat-tona/2014-campana.html"
+                  class="subsublink"
+                  >2014 Campaña</a
+                >
+              </div>
+              <a
+                href="rreth-melanomas/njerezit-tane.html"
+                class="additional-link"
+                >njerezit tane</a
+              >
+              <a
+                href="rreth-melanomas/projektet-shkencore.html"
+                class="additional-link"
+                >projektet shkencore</a
+              >
+              <a
+                href="rreth-melanomas/lajme-dhe-informacione/lajme-dhe-informacione.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown9')"
+                >lajme & informacione
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown9">
+                <a
+                  href="rreth-melanomas/lajme-dhe-informacione/resources.html"
+                  class="subsublink"
+                  >Resources</a
+                >
+                <a
+                  href="rreth-melanomas/lajme-dhe-informacione/links.html"
+                  class="subsublink"
+                  >Links</a
+                >
+              </div>
+              <a href="rreth-melanomas/sponsoret.html" class="additional-link"
+                >sponsoret</a
+              >
+              <a
+                href="rreth-melanomas/contact-euromelanoma.html"
+                class="additional-link"
+                >contact Euromelanoma</a
+              >
+              <a href="rreth-melanomas/support.html" class="additional-link"
+                >support</a
+              >
+            </div>
+          </div>
+          <p class="hamburger">☰</p>
+        </div>
+      </div>
+    </section>
+    <div class="slider-container">
+      <ul class="slider-pagi"></ul>
+      <div class="slider">
+        <div class="slide slide-0 active">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg
+              class="slide__overlay"
+              viewBox="0 0 720 405"
+              preserveAspectRatio="xMaxYMax slice"
+            >
+              <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">Shikoni fushaten tone te fundit</h2>
+              
+              <a
+                class="slide__text-link"
+                href="./rreth-melanomas/fushatat-tona/2025-campana.html"
+                >Meso me shume</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-1">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg
+              class="slide__overlay"
+              viewBox="0 0 720 405"
+              preserveAspectRatio="xMaxYMax slice"
+            >
+              <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">
+                Lekura juaj eshte e cmuar
+              </h2>
+              <p class="slide__text-desc">
+                Kontrolloni lekuren ne menyre te rregullt dhe veproni shpejt
+                nese shihni shenjat e kancerit te lekures.
+              </p>
+              <a
+                class="slide__text-link"
+                href="./mesoni-mbi-kancerin-e-lekures/mesoni-mbi-kancerin-e-lekures.html"
+                >Meso me shume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="rreth-melanomas-home">
+      <div class="rreth-melanomas-home-text">
+        <h3 class="rreth-melanomas-home-text-heading">Rreth Euromelanomas</h3>
+        <p class="rreth-melanomas-home-text-paragraph">
+          Qellimi i Euromelanomes eshte te promovoje dhe shperndaje informacion
+          mbi parandalimin e kancerit te lekures, diagnozes se hershme dhe
+          trajtimit. Ne drejtohemi nga nje rrjet dermatologesh Europiane te
+          cilet zemergjeresisht i dedikojne kohen e tyre kesaj kauze.
+        </p>
+      </div>
+      <a
+        class="rreth-melanomas-home-button"
+        href="./rreth-melanomas/rreth-melanomas.html"
+        >Meso me shume per ne</a
+      >
+    </section>
+
+    <section class="cards-home">
+      <div class="cards-home-container">
+        <a
+          class="card-home card-home-1"
+          href="./parandaloni-kancerin-e-lekures/njihni-fototipin-e-lekures-tuaj.html"
+        >
+          <div class="card-text">
+            <img
+              class="card-image card-1-image"
+              src="images/home/card-1.jpg"
+              alt="Njihni fototipin e lekures suaj"
+            />
+            <h3 class="card-title">Parandaloni</h3>
+            <h3 class="card-subtitle">Fototipi i lekures tuaj</h3>
+            <p class="card-description">
+              <strong
+                >Fototipi i lekures pershkruan se si reagon ajo ndaj ekspozimit
+                te pare ne diell.</strong
+              >
+              Digjet apo nxihet?
+            </p>
+            <p class="card-description">
+              Fototipi juaj identifikohet nga disa karakteristika, sikurse
+              ngjyra e flokeve apo ngjyra e lekures.
+            </p>
+            <a
+              class="cards-home-button"
+              href="./parandaloni-kancerin-e-lekures/njihni-fototipin-e-lekures-tuaj.html"
+              >Zbulo fototipin tend</a
+            >
+          </div>
+        </a>
+        <a
+          class="card-home card-home-1"
+          href="./kontrolloni-per-kancerin-e-lekures/kontrolloni-per-kancerin-e-lekures.html"
+        >
+          <div class="card-text">
+            <img
+              class="card-image card-2-image"
+              src="images/home/card-2.jpg"
+              alt="Njihni fototipin e lekures suaj"
+            />
+            <h3 class="card-title">Mesoni</h3>
+            <h3 class="card-subtitle">Kush eshte i rrezikuar</h3>
+            <p class="card-description">
+              <strong>Kanceri i lekures mund te preke cdo moshe.</strong>
+            </p>
+            <p class="card-description">
+              Eshte me i shpeshte tek njerezit mbi moshen 50 vjec ose tek ato qe
+              ekspozohen shume ne diell.
+            </p>
+            <a
+              class="cards-home-button"
+              href="./kontrolloni-per-kancerin-e-lekures/kontrolloni-per-kancerin-e-lekures.html"
+              >Kontrolloni nivelin e rrezikshmerise se lekures suaj</a
+            >
+          </div>
+        </a>
+        <a
+          class="card-home card-home-1"
+          href="./kontrolloni-per-kancerin-e-lekures/cfare-te-kerkoni.html"
+        >
+          <div class="card-text">
+            <img
+              class="card-image card-3-image"
+              src="images/home/card-3.jpg"
+              alt="Njihni fototipin e lekures suaj"
+            />
+            <h3 class="card-title">Kontrolloni</h3>
+            <h3 class="card-subtitle">Si dhe ku te shihni</h3>
+            <p class="card-description">
+              Ne do kemi nevoje per: nje pasqyre te gjate, nje pasqyre dore, 2
+              karrike, nje tharese flokesh, harta trupi dhe nje laps ose ne
+              menyre ideale nje kamera dixhitale.
+            </p>
+            <a
+              class="cards-home-button"
+              href="./kontrolloni-per-kancerin-e-lekures/cfare-te-kerkoni.html"
+              >Keshilla praktike</a
+            >
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="faqja-kryesore">
+      <div class="container">
+        <h2 class="faqja-kryesore-heading">Faqja Kryesore</h2>
+        <p class="faqja-kryesore-description">
+          Qellimi i Euromelanomes eshte te promovoje dhe shperndaje informacion
+          mbi parandalimin e kancerit te lekures, diagnozes se hershme dhe
+          trajtimit. Ne drejtohemi nga nje rrjet dermatologesh Europiane te
+          cilet zemergjeresisht i dedikojne kohen e tyre kesaj kauze.
+          Aktivitetet tona jane fokusuar qe te arrijne te kene vemendjen e tre
+          aktoreve kryesore: publikut te gjere, komunitetit shkencor dhe
+          politikberesve Europiane dhe Kombetare.
+
+          <br /><br />
+
+          Per publikun: nepermjet websit-it te Euromelanomes (i cili eshte
+          vizituar prej me shume se 1 milion vete) dhe nje fushate
+          ndergjegjesimi publiku vjetore, ne promovojme njohurite e pergjithshme
+          mbi kancerin e lekures, parandalimin, zbulimin e hershem dhe trajtimin
+          e tij. Keto aktivitete arrijne kulmin e tyre ne nje screening publik
+          gjate nje dite te vetme te quajtur “Euromelanoma Screening Day”. Rreth
+          450.000 vete kane perfituar ekzaminim falas te lekures gjate kesaj
+          dite.
+          <br /><br />
+
+          Per dermatologet dhe komunitetin me te gjere mjekesor, ne menyre te
+          rregullt ne ndajme njohuri, praktika me te mira nepermjet publikimeve
+          shkencore ne menyre qe te permiresojme kujdesin ndaj pacienteve me
+          kancer te lekures.
+          <br /><br />
+          Per qeverisjen, ne organizojme evente speciale ne menyre qe trajtimi i
+          kancerit te lekures te njihet dhe mbeshtetet nga sistemi shendetsor
+          dhe politikat perkatese.
+          <br /><br />
+          Qe prej dites se themelimit ne 1999 nga gjashte dermatologe (T.
+          Maselis, M. van Daele, C. Pirard, V. del Marmol, B. Richert, dhe K. de
+          Boulle) Euromelanoma eshte perhapur ne menyre te shpejte ne kontinent
+          dhe sot eshte aktive ne 33 vende.
+        </p>
+      </div>
+    </section>
+
+    <section class="related-videos">
+      <div class="container">
+        <h2
+          class="faqja-kryesore-heading"
+          style="text-align: center; margin-bottom: 4rem"
+        >
+          Video të ngjashme
+        </h2>
+        <div class="videos-container">
+          <div class="video-container">
+            <h3 class="video-title">Ka mundesi qe s’eshte asgje</h3>
+            <p class="video-description">
+              Nje video e shkurter nga Euromelanoma rreth nevojes per te
+              kontrolluar nevuset e dyshimta. Po, ka mundesi qe “s’eshte asgje”
+              por eshte gjithmone mire ta kontrolloni tek nje dermatolog.
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/ow-8B9osXSU"
+              allowfullscreen=""
+              webkitallowfullscreen=""
+              width="600px"
+              height="300px"
+              mozallowfullscreen=""
+            >
+            </iframe>
+          </div>
+          <div class="video-container">
+            <h3 class="video-title">
+              Kontrolloni per melanomen malinje ne dy minuta
+            </h3>
+            <p class="video-description">
+              Kjo video tregon sa sa vdekjeprurese eshte kjo semundje ne tre
+              hapa te thjeshte.
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/Zbt0NWbcHAs"
+              allowfullscreen=""
+              webkitallowfullscreen=""
+              width="600px"
+              height="300px"
+              mozallowfullscreen=""
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="last-campaigns-home">
+      <h2
+        class="faqja-kryesore-heading"
+        style="text-align: center; margin-bottom: 2rem; margin-top: 6rem"
+      >
+        Fushatat tona te fundit
+      </h2>
+      <div class="owl-carousel owl-theme">
+        <div>
+          <a href="rreth-melanomas/fushatat-tona/2021-campana.html"
+            ><img
+              class="camp-img"
+              src="images/campaigns/2021.jpg"
+              alt="2021 campaign"
+          /></a>
+        </div>
+        <div>
+          <a href="rreth-melanomas/fushatat-tona/2022-campana.html"
+            ><img
+              class="camp-img"
+              src="images/campaigns/2022.png"
+              alt="2022 campaign"
+          /></a>
+        </div>
+
+        <div>
+          <a href="rreth-melanomas/fushatat-tona/2023-campana.html"
+            ><img
+              class="camp-img"
+              src="images/campaigns/2023.jpg"
+              alt="2023 campaign"
+          /></a>
+        </div>
+        <div>
+          <a href="rreth-melanomas/fushatat-tona/2024-campana.html"
+            ><img
+              class="camp-img"
+              src="images/campaigns/2024.jpg"
+              alt="2024 campaign"
+          /></a>
+        </div>
+        <div>
+          <a href="rreth-melanomas/fushatat-tona/2025-campana.html"
+            ><img
+              class="camp-img"
+              src="images/campaigns/2025.jpg"
+              alt="2025 campaign"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="eado">
+      <p class="eado-p">
+        EUROMELANOMA është fushata zyrtare për parandalimin e kancerit të
+        lëkurës nga EADO.
+      </p>
+      <img class="eado-img" src="images/sponsors/eado.jpg" alt="eado" />
+    </section>
+
+    <section class="footer">
+      <div class="footer-row sponsors-row">
+        <a href="https://www.almirall.com/"
+          ><img
+            class="sponsor-img"
+            src="images/sponsors/almirall.svg"
+            alt="Sponsor 1"
+        /></a>
+        <a href="https://www.eau-thermale-avene.com/"
+          ><img
+            class="sponsor-img"
+            src="images/sponsors/avene-laboratoire.svg"
+            alt="Sponsor 2"
+        /></a>
+        <a href="https://int.eucerin.com/"
+          ><img
+            class="sponsor-img"
+            src="images/sponsors/eucerin.svg"
+            alt="Sponsor 3"
+        /></a>
+        <a href="https://www.merckgroup.com/en"
+          ><img
+            class="sponsor-img"
+            src="images/sponsors/merck.svg"
+            alt="Sponsor 4"
+        /></a>
+      </div>
+      <div class="footer-row columns-row">
+        <div class="footer-column">
+          <h3>
+            <a
+              class="column-title"
+              href="./mesoni-mbi-kancerin-e-lekures/mesoni-mbi-kancerin-e-lekures.html"
+              >MËSONI RRETH KANCERIT TË LEKURES</a
+            >
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="column-link"
+                href="./mesoni-mbi-kancerin-e-lekures/shkaktaret/shkaktaret.html"
+                >Shkaqet</a
+              >
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="./mesoni-mbi-kancerin-e-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures.html"
+                >Kush është në rrezik?
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="./mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/llojet-e-kancerit-te-lekures.html"
+                >Llojet e kancerit të lëkurës</a
+              >
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="./mesoni-mbi-kancerin-e-lekures/lezionet-beninje/lezionet-beninje.html"
+                >Lezionet beninje</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>
+            <a
+              class="column-title"
+              href="./parandaloni-kancerin-e-lekures/parandaloni-kancerin-e-lekures.html"
+              >PARANDALONI KANCERIN E LEKURES</a
+            >
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="column-link"
+                href="./parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/mbroni-lekuren-tuaj.html"
+                >Mbroni lëkurën tuaj</a
+              >
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="./parandaloni-kancerin-e-lekures/njihni-fototipin-e-lekures-tuaj.html"
+                >Njihni llojin tuaj
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="./parandaloni-kancerin-e-lekures/nxija-e-lekures-dhe-kabinat-solare.html"
+                >Nxija e lekures dhe kabinat solare</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>
+            <a
+              class="column-title"
+              href="./kontrolloni-per-kancerin-e-lekures/kontrolloni-per-kancerin-e-lekures.html"
+              >KONTROLLO PËR KANCER TË LËKURËS</a
+            >
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="column-link"
+                href="./kontrolloni-per-kancerin-e-lekures/cfare-te-kerkoni.html"
+                >Çfarë duhet kërkuar
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="./kontrolloni-per-kancerin-e-lekures/si-dhe-ku-te-kerkoni.html"
+                >Si dhe ku të shikoni
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="./kontrolloni-per-kancerin-e-lekures/cfare-te-bejme-tjeter/cfare-te-bejme-tjeter.html"
+                >Çfarë duhet bërë më pas
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>
+            <a
+              class="column-title"
+              href="./kontrolloni-per-kancerin-e-lekures/kontrolloni-per-kancerin-e-lekures.html"
+              >RRETH EUROMELANOMAS</a
+            >
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="column-link"
+                href="./rreth-melanomas/fushatat-tona/fushatat-tona.html"
+                >Fushatat tona
+              </a>
+            </li>
+            <li>
+              <a class="column-link" href="./rreth-melanomas/njerezit-tane.html"
+                >Njerëzit tanë
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="./rreth-melanomas/lajme-dhe-informacione/lajme-dhe-informacione.html"
+                >Lajmet dhe burimet
+              </a>
+            </li>
+            <li>
+              <a class="column-link" href="./rreth-melanomas/sponsoret.html"
+                >Sponsorët
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="./rreth-melanomas/projektet-shkencore.html"
+                >Projektet shkencore
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-row copyright-row">
+        <img class="logo" src="images/logo.svg" alt="Euromelanoma Logo" />
+        <p class="copyright-text">© 2024 Euromelanoma. All Rights Reserved.</p>
+        <div class="copyright-links">
+          <a
+            href="http://euromelanoma.apos4.swiss4ward.com/legal-mentions"
+            class="copyright-link"
+            >Legal mentions</a
+          >
+          <a
+            href="http://euromelanoma.apos4.swiss4ward.com/privacy-policy"
+            class="copyright-link"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="js/slider.js"></script>
+
+    <script src="js/nav.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var $slider = $(".slider"),
+          $slideBGs = $(".slide__bg"),
+          diff = 0,
+          curSlide = 0,
+          numOfSlides = $(".slide").length - 1,
+          animating = false,
+          animTime = 400,
+          autoSlideTimeout,
+          autoSlideDelay = 5000,
+          $pagination = $(".slider-pagi");
+
+        function createBullets() {
+          for (var i = 0; i < numOfSlides + 1; i++) {
+            var $li = $("<li class='slider-pagi__elem'></li>");
+            $li.addClass("slider-pagi__elem-" + i).data("page", i);
+            if (!i) $li.addClass("active");
+            $pagination.append($li);
+          }
+        }
+
+        createBullets();
+
+        function manageControls() {
+          $(".slider-control").removeClass("inactive");
+          if (!curSlide) $(".slider-control.left").addClass("inactive");
+          if (curSlide === numOfSlides)
+            $(".slider-control.right").addClass("inactive");
+        }
+
+        function autoSlide() {
+          autoSlideTimeout = setTimeout(function () {
+            curSlide++;
+            if (curSlide > numOfSlides) curSlide = 0;
+            changeSlides();
+          }, autoSlideDelay);
+        }
+
+        autoSlide();
+
+        function changeSlides(instant) {
+          if (!instant) {
+            animating = true;
+            manageControls();
+            $slider.addClass("animating");
+            $slider.css("top");
+            $(".slide").removeClass("active");
+            $(".slide-" + curSlide).addClass("active");
+            setTimeout(function () {
+              $slider.removeClass("animating");
+              animating = false;
+            }, animTime);
+          }
+          window.clearTimeout(autoSlideTimeout);
+          $(".slider-pagi__elem").removeClass("active");
+          $(".slider-pagi__elem-" + curSlide).addClass("active");
+          $slider.css("transform", "translate3d(" + -curSlide * 100 + "%,0,0)");
+          $slideBGs.css("transform", "translate3d(" + curSlide * 50 + "%,0,0)");
+          diff = 0;
+          autoSlide();
+        }
+
+        function navigateLeft() {
+          if (animating) return;
+          if (curSlide > 0) curSlide--;
+          changeSlides();
+        }
+
+        function navigateRight() {
+          if (animating) return;
+          if (curSlide < numOfSlides) curSlide++;
+          changeSlides();
+        }
+
+        $(document).on("mousedown touchstart", ".slider", function (e) {
+          if (animating) return;
+          window.clearTimeout(autoSlideTimeout);
+          var startX = e.pageX || e.originalEvent.touches[0].pageX,
+            winW = $(window).width();
+          diff = 0;
+
+          $(document).on("mousemove touchmove", function (e) {
+            var x = e.pageX || e.originalEvent.touches[0].pageX;
+            diff = ((startX - x) / winW) * 70;
+            if (
+              (!curSlide && diff < 0) ||
+              (curSlide === numOfSlides && diff > 0)
+            )
+              diff /= 2;
+            $slider.css(
+              "transform",
+              "translate3d(" + (-curSlide * 100 - diff) + "%,0,0)"
+            );
+            $slideBGs.css(
+              "transform",
+              "translate3d(" + (curSlide * 50 + diff / 2) + "%,0,0)"
+            );
+          });
+        });
+
+        $(document).on("mouseup touchend", function (e) {
+          $(document).off("mousemove touchmove");
+          if (animating) return;
+          if (!diff) {
+            changeSlides(true);
+            return;
+          }
+          if (diff > -8 && diff < 8) {
+            changeSlides();
+            return;
+          }
+          if (diff <= -8) {
+            navigateLeft();
+          }
+          if (diff >= 8) {
+            navigateRight();
+          }
+        });
+
+        $(document).on("click", ".slider-control", function () {
+          if ($(this).hasClass("left")) {
+            navigateLeft();
+          } else {
+            navigateRight();
+          }
+        });
+
+        $(document).on("click", ".slider-pagi__elem", function () {
+          curSlide = $(this).data("page");
+          changeSlides();
+        });
+      });
+    </script>
+  </body>
+</html>

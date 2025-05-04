@@ -1,0 +1,289 @@
+/* NAV BAR */
+
+/* Navbar container */
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: #d19c5b;
+  padding: 1.5rem 8.5rem;
+  padding-top: 2.3rem;
+  padding-bottom: 1.2rem;
+  -webkit-box-shadow: 0px 4px 5px -1px rgba(217, 217, 217, 1);
+  -moz-box-shadow: 0px 4px 5px -1px rgba(217, 217, 217, 1);
+  box-shadow: 0px 4px 5px -1px rgba(217, 217, 217, 1);
+}
+
+.logo {
+  width: 9rem;
+  height: 9rem;
+  margin-right: 4rem;
+}
+
+/* Main navigation */
+.nav {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: #02356a;
+  font-size: 3rem;
+  user-select: none;
+}
+
+@media (max-width: 1300px) {
+  .nav-container {
+    background-color: #d19c5b;
+    padding: 1.2rem 1.5rem;
+  }
+  .logo {
+    margin-right: 2rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .nav {
+    gap: 2px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .nav {
+    display: none;
+  }
+  .nav-mobile {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding-left: 1.5rem;
+    background-color: #d19c5b;
+    border: 1px solid #02356a;
+    -webkit-box-shadow: 0px 4px 5px -1px rgba(217, 217, 217, 1);
+    -moz-box-shadow: 0px 4px 5px -1px rgba(217, 217, 217, 1);
+    box-shadow: 0px 4px 5px -1px rgba(217, 217, 217, 1);
+    display: block;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    z-index: 3 !important;
+  }
+
+  .sublink {
+    width: 170px;
+  }
+
+  .hamburger {
+    display: block;
+    justify-self: flex-end;
+  }
+}
+
+ion-icon {
+  font-size: 8px;
+}
+
+/* Main dropdown links */
+.nav-item {
+  position: relative;
+  color: #02356a;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none; /* Removed from here */
+}
+
+.nav-item:hover {
+  background-color: #02356a;
+  color: #fff;
+}
+
+.nav-item:active,
+.nav-item:visited,
+.nav-item:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Main link text decoration */
+.nav-item a {
+  text-decoration: none;
+}
+
+/* Corrected styles for main links */
+.main-link {
+  font-weight: 700;
+  display: inline-block; /* Ensures the link occupies the entire space of the .nav-item */
+  padding: 15px;
+}
+
+/* Apply hover effect to .nav-item instead of .main-link */
+.nav-item:hover .main-link {
+  background-color: #02356a; /* Main links hover background color */
+  color: white; /* Main links hover text color */
+}
+
+/* Subdropdown container */
+.subdropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #d19c5b;
+  transition: top 0.3s ease-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* Subdropdown links */
+.sublink {
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.5;
+  display: block;
+  background-color: #02356a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sublink:hover {
+  background-color: #d19c5b;
+  color: #02356a;
+}
+
+/* Third-level subdropdown container */
+.subsubdropdown {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  background-color: #d19c5b;
+  width: 200px;
+  transition: top 0.3s ease-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#subsubdropdown1 {
+  top: -3%;
+}
+
+#subsubdropdown2 {
+  top: 20%;
+}
+
+#subsubdropdown6 {
+  top: 10%;
+}
+
+#subsubdropdown7 {
+  top: 47%;
+}
+
+#subsubdropdown9 {
+  top: 37%;
+}
+
+/* Third-level subdropdown links */
+.subsublink {
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.5;
+  display: block;
+  background-color: #02356a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subsublink:hover {
+  background-color: #d19c5b;
+  color: #02356a;
+}
+
+/* Show subsubdropdown when sublink is hovered */
+.sublink:hover + .subsubdropdown {
+  display: block;
+}
+
+/* Hide subsubdropdown when not hovered */
+.subsubdropdown {
+  display: none;
+}
+
+/* Corrected styles for main links */
+.main-link {
+  color: #02356a; /* Main links color */
+}
+
+.main-link:hover {
+  background-color: #02356a; /* Main links hover background color */
+  color: white; /* Main links hover text color */
+}
+
+/* Show subsubdropdown when sublink is hovered */
+.sublink:hover + .subsubdropdown {
+  display: block;
+}
+
+/* Hide subsubdropdown when not hovered */
+.subsubdropdown {
+  display: none;
+}
+
+/* Keep subsubdropdown open when hovered */
+.subsubdropdown:hover {
+  display: block;
+}
+
+/* Additional link styles  */
+.additional-link {
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.5;
+  display: block;
+  background-color: #02356a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.additional-link:hover {
+  background-color: #d19c5b;
+  color: #02356a;
+}
+
+/* Media query for responsive design 
+@media (max-width: 900px) {
+  .logo {
+    margin-right: 0;
+  }
+  .nav {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-item {
+  }
+}
+*/
