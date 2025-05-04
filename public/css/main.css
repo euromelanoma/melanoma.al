@@ -309,6 +309,14 @@ svg {
   transform: rotateX(0);
 }
 
+.vid-container {
+  width: fit-content;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 /*rreth melanomas home*/
 
 .rreth-melanomas-home {
