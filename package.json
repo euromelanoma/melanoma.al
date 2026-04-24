@@ -1,0 +1,19 @@
+{
+  "name": "euromelanoma-al",
+  "version": "1.0.0",
+  "description": "Official source code of Euromelanoma Albania",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "leloaurel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.0",
+    "request": "^2.88.2"
+  }
+}

@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Euromelanoma ekziston për të promovuar dhe shkëmbyer informacion mbi parandalimin e kancerit të lëkurës, diagnostikimin dhe trajtimin e hershëm."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../../images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .flex-container {
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        gap: 30px; /* Gap between image containers */
+        flex-wrap: wrap;
+      }
+
+      /* Container for the images */
+      .image-container {
+        position: relative; /* Needed for absolute positioning of buttons */
+        width: 200px; /* Set the image width */
+        height: auto; /* Set the image height */
+        overflow: hidden; /* Hide overflow */
+      }
+
+      /* The image itself */
+      .image {
+        width: 100%; /* Fill the container */
+        height: 100%; /* Fill the container */
+        transition: filter 0.3s ease; /* Smooth transition for blur effect */
+      }
+
+      /* Hover effect on the image */
+      .image-container:hover .image {
+        filter: blur(3px); /* Blur effect on hover */
+      }
+
+      /* Container for the hover buttons */
+      .button-container {
+        position: absolute; /* Position absolutely within the container */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Center buttons */
+        display: none; /* Hidden by default */
+        gap: 10px; /* Gap between buttons */
+        flex-direction: row; /* Align buttons in a row */
+        justify-content: center; /* Center buttons */
+        align-items: center; /* Center vertically */
+      }
+
+      /* Show buttons on hover */
+      .image-container:hover .button-container {
+        display: flex; /* Show buttons when hovering */
+      }
+
+      /* Styling for the buttons */
+      .babies-button {
+        background-color: #686868; /* Background color for buttons */
+        color: white; /* White text color */
+        padding: 10px; /* Padding around buttons */
+        border: none; /* No border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Change cursor to pointer */
+        transition: background-color 0.3s ease; /* Smooth transition on hover */
+      }
+
+      .babies-button ion-icon {
+        font-size: 2rem;
+      }
+
+      /* Hover effect on buttons */
+      .babies-button:hover {
+        background-color: #555; /* Darker on hover */
+      }
+    </style>
+    <link rel="stylesheet" href="../../css/general.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/alt-nav.css" />
+    <title>Fushata 2026 - Euromelanoma</title>
+  </head>
+  <body>
+    <section class="breadcrumb">
+      <div class="nav-container">
+        <div class="nav">
+          <a href="../../index.html"
+            ><img class="logo" src="../../images/logo.svg" alt="logo nav"
+          /></a>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <!-- Home Link -->
+            <a class="main-link" href="../../index.html">HOME</a>
+          </div>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <!-- Main Link 1 -->
+            <a
+              class="main-link"
+              href="../../mesoni-mbi-kancerin-e-lekures/mesoni-mbi-kancerin-e-lekures.html"
+              >Mesoni mbi kancerin e lekures
+              <ion-icon name="caret-down-outline"></ion-icon
+            ></a>
+            <div class="subdropdown">
+              <a
+                href="../../mesoni-mbi-kancerin-e-lekures/shkaktaret/shkaktaret.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown1')"
+                >Shkaktaret <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown1">
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/shkaktaret/rrezet-ultraviolet-dhe-efektet-e-tyre.html"
+                  class="subsublink"
+                  >Rrezet ultraviolet dhe efektet e tyre</a
+                >
+              </div>
+              <a
+                href="../../mesoni-mbi-kancerin-e-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown2')"
+                >kush eshte i rrezikuar per kancer te lekures
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown2">
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures/melanoma-risk-factors.html"
+                  class="subsublink"
+                  >Melanoma risk factors</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures/non-melanoma-risk-factors.html"
+                  class="subsublink"
+                  >Non-melanoma risk factors</a
+                >
+              </div>
+              <a
+                href="../../mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/llojet-e-kancerit-te-lekures.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown3')"
+                >llojet e kancerit te lekures
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown3">
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/basaliom.html"
+                  class="subsublink"
+                  >Basaliom</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/actinic-keratosis.html"
+                  class="subsublink"
+                  >actinic keratosis</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/spinaliom.html"
+                  class="subsublink"
+                  >Spinaliom</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/melanoma.html"
+                  class="subsublink"
+                  >Melanoma</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/merkel-cell-carcinoma.html"
+                  class="subsublink"
+                  >Merkel Cell Carcinoma</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/other-types-of-skin-cancer.html"
+                  class="subsublink"
+                  >Other types of skin cancer</a
+                >
+              </div>
+              <a
+                href="../../mesoni-mbi-kancerin-e-lekures/lezionet-beninje/lezionet-beninje.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown4')"
+                >lezionet beninje <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown4">
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/lezionet-beninje/nishanet.html"
+                  class="subsublink"
+                  >Nishanet</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/lezionet-beninje/skin-tags.html"
+                  class="subsublink"
+                  >Skin tags</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/lezionet-beninje/dermatofibroma.html"
+                  class="subsublink"
+                  >Dermatofibroma</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/lezionet-beninje/hemangioma.html"
+                  class="subsublink"
+                  >Hemangioma</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/lezionet-beninje/angioma.html"
+                  class="subsublink"
+                  >Angioma</a
+                >
+                <a
+                  href="../../mesoni-mbi-kancerin-e-lekures/lezionet-beninje/keratoza-seborrheike.html"
+                  class="subsublink"
+                  >Keratoza seborrheike</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <a
+              class="main-link"
+              href="../../parandaloni-kancerin-e-lekures/parandaloni-kancerin-e-lekures.html"
+              >Parandaloni kancerin e lekures
+              <ion-icon name="caret-down-outline"></ion-icon
+            ></a>
+
+            <div class="subdropdown">
+              <a
+                href="../../parandaloni-kancerin-e-lekures/njihni-fototipin-e-lekures-tuaj.html"
+                class="additional-link"
+                >Njihni fototipin e lekures tuaj</a
+              >
+              <a
+                href="../../parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/mbroni-lekuren-tuaj.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown6')"
+                >Mbroni lekuren tuaj
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown6">
+                <a
+                  href="../../parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/babies-and-children.html"
+                  class="subsublink"
+                  >Babies & children</a
+                >
+                <a
+                  href="../../parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/teenagers.html"
+                  class="subsublink"
+                  >Adoleshente</a
+                >
+                <a
+                  href="../../parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/te-rriturit.html"
+                  class="subsublink"
+                  >Te rritur</a
+                >
+              </div>
+              <a
+                href="../../parandaloni-kancerin-e-lekures/nxija-e-lekures-dhe-kabinat-solare.html"
+                class="additional-link"
+                >Nxija e lekures dhe kabinat solare</a
+              >
+            </div>
+          </div>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <a
+              class="main-link"
+              href="../../kontrolloni-per-kancerin-e-lekures/kontrolloni-per-kancerin-e-lekures.html"
+              >kontrolloni per kancerin e lekures
+              <ion-icon name="caret-down-outline"></ion-icon
+            ></a>
+            <div class="subdropdown">
+              <a
+                href="../../kontrolloni-per-kancerin-e-lekures/cfare-te-kerkoni.html"
+                class="additional-link"
+                >cfare te kerkoni</a
+              >
+              <a
+                href="../../kontrolloni-per-kancerin-e-lekures/si-dhe-ku-te-kerkoni.html"
+                class="additional-link"
+                >si dhe ku te kerkoni</a
+              >
+              <a
+                href="../../kontrolloni-per-kancerin-e-lekures/cfare-te-bejme-tjeter/cfare-te-bejme-tjeter.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown7')"
+                >cfare te bejme tjeter
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown7">
+                <a
+                  href="../../kontrolloni-per-kancerin-e-lekures/cfare-te-bejme-tjeter/pre-appointment-checklist.html"
+                  class="subsublink"
+                  >Pre-appointment checklist</a
+                >
+                <a
+                  href="../../kontrolloni-per-kancerin-e-lekures/cfare-te-bejme-tjeter/gjerat-qe-duhet-te-pyesni-mjekun-tuaj.html"
+                  class="subsublink"
+                  >Gjerat qe duhet te pyesni mjekun tuaj</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="nav-item"
+            onmouseover="showSubDropdown(this)"
+            onmouseout="hideAllDropdowns()"
+          >
+            <a
+              class="main-link"
+              href="../../rreth-melanomas/rreth-melanomas.html"
+              >rreth euromelanomas
+              <ion-icon name="caret-down-outline"></ion-icon
+            ></a>
+            <div class="subdropdown">
+              <a
+                href="../../rreth-melanomas/fushatat-tona/fushatat-tona.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown8')"
+                >fushatat tona <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown8">
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2026-campana.html"
+                  class="subsublink"
+                  >2026 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2025-campana.html"
+                  class="subsublink"
+                  >2025 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2024-campana.html"
+                  class="subsublink"
+                  >2024 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2023-campana.html"
+                  class="subsublink"
+                  >2023 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2022-campana.html"
+                  class="subsublink"
+                  >2022 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2021-campana.html"
+                  class="subsublink"
+                  >2021 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2020-campana.html"
+                  class="subsublink"
+                  >2020 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2019-campana.html"
+                  class="subsublink"
+                  >2019 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2018-campana.html"
+                  class="subsublink"
+                  >2018 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2017-campana.html"
+                  class="subsublink"
+                  >2017 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2016-campana.html"
+                  class="subsublink"
+                  >2016 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2015-campana.html"
+                  class="subsublink"
+                  >2015 Campaña</a
+                >
+                <a
+                  href="../../rreth-melanomas/fushatat-tona/2014-campana.html"
+                  class="subsublink"
+                  >2014 Campaña</a
+                >
+              </div>
+              <a
+                href="../../rreth-melanomas/njerezit-tane.html"
+                class="additional-link"
+                >njerezit tane</a
+              >
+              <a
+                href="../../rreth-melanomas/projektet-shkencore.html"
+                class="additional-link"
+                >projektet shkencore</a
+              >
+              <a
+                href="../../rreth-melanomas/lajme-dhe-informacione/lajme-dhe-informacione.html"
+                class="sublink"
+                onmouseover="showSubSubDropdown(this, 'subsubdropdown9')"
+                >lajme & informacione
+                <ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <div class="subsubdropdown" id="subsubdropdown9">
+                <a
+                  href="../../rreth-melanomas/lajme-dhe-informacione/resources.html"
+                  class="subsublink"
+                  >Resources</a
+                >
+                <a
+                  href="../../rreth-melanomas/lajme-dhe-informacione/links.html"
+                  class="subsublink"
+                  >Links</a
+                >
+              </div>
+              <a
+                href="../../rreth-melanomas/sponsoret.html"
+                class="additional-link"
+                >sponsoret</a
+              >
+              <a
+                href="../../rreth-melanomas/contact-euromelanoma.html"
+                class="additional-link"
+                >contact Euromelanoma</a
+              >
+              <a
+                href="../../rreth-melanomas/support.html"
+                class="additional-link"
+                >support</a
+              >
+            </div>
+          </div>
+          <div class="hamburger">☰</div>
+        </div>
+      </div>
+      <div class="breadcrumb-container">
+        <div class="breadcrumb-nav">
+          <a class="breadcrumb-link" href="../../index.html">Home</a
+          ><span class="breadcrumb-slash">/</span
+          ><a class="breadcrumb-link" href="../rreth-melanomas.html"
+            >Rreth Euromelanomas</a
+          ><span class="breadcrumb-slash">/</span
+          ><a class="breadcrumb-link" href="fushatat-tona.html">Fushatat tona</a
+          ><span class="breadcrumb-slash">/</span
+          ><a class="breadcrumb-link" href="2026-campana.html">Fushata 2026</a>
+        </div>
+        <h1 class="breadcrumb-title">Fushata 2026</h1>
+      </div>
+    </section>
+
+    <!-- 2026 campaign "BULLSH*T" scoped styles -->
+    <style>
+      /* =========== page background =========== */
+      .c26 {
+        background-color: #23323b;
+        color: #ffffff;
+        padding: 0 0 2rem 0;
+      }
+
+      /* =========== intro section =========== */
+      .c26-intro-top {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 6rem 4rem 2rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        align-items: flex-start;
+      }
+      .c26-intro-top p { margin: 0; }
+      .c26-intro-heading {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 1.4;
+      }
+      .c26-intro-body {
+        font-size: 1.5rem;
+        line-height: 1.55;
+        color: #c9d2d8;
+      }
+
+      /* jagged chevron edge (dark, on the main page) */
+      .c26-zig-dark {
+        display: block;
+        width: 100%;
+        height: 14px;
+        background-color: #23323b;
+        background-image:
+          linear-gradient(-45deg, #1c2830 8px, transparent 0),
+          linear-gradient(45deg, #1c2830 8px, transparent 0);
+        background-size: 16px 14px;
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+      }
+
+      /* blue zigzag sitting directly on top of the truth panel */
+      .c26-jag-blue {
+        display: block;
+        width: 100%;
+        height: 12px;
+        background-color: #1c2830;
+        background-image:
+          linear-gradient(-45deg, #3ab4d8 7px, transparent 0),
+          linear-gradient(45deg, #3ab4d8 7px, transparent 0);
+        background-size: 14px 12px;
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+        margin-bottom: -1px;
+      }
+
+      .c26-myths-row {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 5rem 4rem 1rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        align-items: flex-start;
+      }
+      .c26-myths-title {
+        font-size: 1.5rem;
+        color: #c9d2d8;
+        line-height: 1.5;
+        margin: 0 0 1.5rem 0;
+      }
+      .c26-myths-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .c26-myths-list li {
+        margin-bottom: 0.7rem;
+      }
+      .c26-myths-list a {
+        color: #3ab4d8;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-decoration: none;
+        line-height: 1.5;
+      }
+      .c26-myths-list a:hover { text-decoration: underline; }
+      .c26-sidenote {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.45;
+        color: #ffffff;
+        margin: 0;
+      }
+
+      /* blue arrow */
+      .c26-arrow-wrap {
+        position: relative;
+        height: 14rem;
+        margin-top: 2rem;
+      }
+      .c26-arrow-wrap svg {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        height: 100%;
+        width: auto;
+        display: block;
+      }
+
+      /* =========== LIE blocks =========== */
+      .c26-lies {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 3rem 4rem 4rem 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+      }
+
+      .c26-lie {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      /* dark header with title + bull */
+      .c26-lie-head {
+        background-color: #1c2830;
+        padding: 3rem 4rem 3.5rem 4rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .c26-lie-head::after {
+        /* faint "BULL SH*T" behind the bull */
+        content: "BULL\A SH*T";
+        white-space: pre;
+        position: absolute;
+        right: 13rem;
+        top: 0.5rem;
+        font-size: 5.5rem;
+        font-weight: 900;
+        color: rgba(255,255,255,0.04);
+        letter-spacing: -1px;
+        line-height: 1;
+        pointer-events: none;
+        font-family: "Open Sans", sans-serif;
+      }
+      .c26-lie-bull {
+        position: absolute;
+        right: 3rem;
+        top: 1.5rem;
+        width: 9rem;
+        height: auto;
+        z-index: 2;
+      }
+      .c26-lie-number {
+        color: #3ab4d8;
+        font-weight: 700;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin: 0 0 1.5rem 0;
+        text-transform: uppercase;
+      }
+      .c26-lie-title {
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        max-width: calc(100% - 14rem);
+        line-height: 1.3;
+        text-transform: uppercase;
+      }
+
+      /* the blue "THE TRUTH" panel */
+      .c26-lie-body {
+        background-color: #3ab4d8;
+        padding: 3rem 4rem 3.5rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+      }
+      .c26-truth-heading {
+        color: #134a5d;
+        font-size: 2rem;
+        font-weight: 800;
+        margin: 0 0 2rem 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .c26-truth-list {
+        list-style: disc;
+        padding-left: 2rem;
+        margin: 0 0 2.5rem 0;
+      }
+      .c26-truth-list li {
+        color: #133241;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 1.3rem;
+      }
+      .c26-citations {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+      }
+      .c26-citation {
+        background-color: #6ecae3;
+        padding: 1rem 3.5rem 1rem 1.3rem;
+        font-size: 1.25rem;
+        color: #0e3a4b;
+        line-height: 1.45;
+        position: relative;
+        border-radius: 2px;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.15s ease;
+      }
+      a.c26-citation:hover {
+        background-color: #87d5eb;
+        color: #0e3a4b;
+      }
+      a.c26-citation:visited {
+        color: #0e3a4b;
+      }
+      .c26-citation strong { font-weight: 700; }
+      .c26-citation::after {
+        content: "";
+        position: absolute;
+        right: 0.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230e3a4b' stroke-width='1.8'><path d='M7 3h8l4 4v14H7z'/><path d='M15 3v4h4'/><path d='M9 11h6M9 14h6'/><circle cx='17' cy='18' r='2.2'/><path d='M18.5 19.5 l2 2'/></svg>");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      /* video on the right */
+      .c26-video-wrap {
+        position: relative;
+        width: 100%;
+        background-color: #0e3a4b;
+        border-radius: 2px;
+        overflow: hidden;
+        aspect-ratio: 4 / 3;
+      }
+      .c26-video-wrap video,
+      .c26-video-wrap img.c26-video-poster {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        filter: grayscale(40%) brightness(0.85);
+      }
+      .c26-video-placeholder {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #1e5a72 0%, #276b84 100%);
+        color: #c9eaf4;
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 2rem;
+        font-weight: 600;
+      }
+      .c26-video-play {
+        position: absolute;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        width: 6.5rem;
+        height: 6.5rem;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,0.55);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+      }
+      .c26-video-play::after {
+        content: "";
+        display: block;
+        width: 0; height: 0;
+        margin-left: 0.6rem;
+        border-left: 2rem solid #ffffff;
+        border-top: 1.3rem solid transparent;
+        border-bottom: 1.3rem solid transparent;
+      }
+
+      /* =========== final "real deal" image block =========== */
+      .c26-realdeal {
+        background-color: #23323b;
+        padding: 4rem 4rem 6rem 4rem;
+      }
+      .c26-realdeal-inner {
+        max-width: 120rem;
+        margin: 0 auto;
+        /*background-color: #222C2D;*/
+        text-align: right;
+        padding: 2rem 2rem 2rem 2rem;
+      }
+      .c26-realdeal-title {
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0 0 2rem 0;
+      }
+      .c26-realdeal-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* =========== responsive =========== */
+      @media (max-width: 900px) {
+        .c26-intro-top, .c26-myths-row { grid-template-columns: 1fr; gap: 2.5rem; padding: 4rem 2rem; }
+        .c26-lies { padding: 2rem 2rem 4rem 2rem; gap: 4rem; }
+        .c26-lie-head { padding: 2.5rem 2rem 3rem 2rem; }
+        .c26-lie-head::after { font-size: 3.5rem; right: 9rem; }
+        .c26-lie-bull { width: 6.5rem; right: 1.5rem; top: 1rem; }
+        .c26-lie-title { max-width: calc(100% - 9rem); font-size: 1.7rem; }
+        .c26-lie-body { grid-template-columns: 1fr; padding: 2.5rem 2rem 3rem 2rem; }
+        .c26-arrow-wrap { height: 10rem; }
+        .c26-realdeal { padding: 3rem 2rem 4rem 2rem; }
+        .c26-realdeal-inner { text-align: center; }
+        .c26-video-play { width: 5rem; height: 5rem; }
+        .c26-video-play::after { border-left-width: 1.5rem; border-top-width: 1rem; border-bottom-width: 1rem; }
+      }
+    </style>
+
+    <section class="c26">
+
+      <!-- INTRO ROW 1 -->
+      <div class="c26-intro-top">
+        <p class="c26-intro-heading">
+          Mos beso gjithçka që sheh në internet. Sidomos kur bëhet fjalë për të mbrojtur veten nga kanceri i lëkurës.
+        </p>
+        <p class="c26-intro-body">
+          Euromelanoma ekziston për të ofruar informacion të saktë dhe të besueshëm për kancerin e lëkurës: çfarë është, si të parandalohet dhe si të zbulohet. Mijëra dermatologë tanë në mbarë Evropën janë të shqetësuar për përhapjen e pretendimeve të pasakta, të pabaza dhe të rrezikshme që po bëhen në lidhje me ekspozimin ndaj rrezeve UV dhe mbrojtjen nga dielli në internet, veçanërisht nëpërmjet rrjeteve sociale.
+        </p>
+      </div>
+
+      <span class="c26-zig-dark" aria-hidden="true"></span>
+
+      <!-- INTRO ROW 2: myths list + sidenote -->
+      <div class="c26-myths-row">
+        <div>
+          <p class="c26-myths-title">
+            Kjo fushatë po trajton pesë mite shqetësueshëm të përhapura:
+          </p>
+          <ol class="c26-myths-list">
+            <li><a href="#genjeshtra-1">1. Një nxirje bazë të pengon të digjesh nga dielli</a></li>
+            <li><a href="#genjeshtra-2">2. Kremi kundër diellit shkakton kancer</a></li>
+            <li><a href="#genjeshtra-3">3. Ekspozimi ndaj rrezeve UV është i shëndetshëm</a></li>
+            <li><a href="#genjeshtra-4">4. Solariumet duhen përdorur para pushimeve</a></li>
+            <li><a href="#genjeshtra-5">5. Mbajtja e syzeve të diellit rrit rrezikun e djegies nga dielli</a></li>
+          </ol>
+        </div>
+        <div>
+          <p class="c26-sidenote">
+            Ju lutemi, mësoni faktet, në mënyrë që të bëni zgjedhje të zgjuara për menaxhimin e rrezikut nga kanceri i lëkurës.
+          </p>
+        </div>
+      </div>
+
+      <!-- arrow going down -->
+      <div class="c26-arrow-wrap" aria-hidden="true">
+        <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 220 12 L 110 12 L 110 112" fill="none" stroke="#3ab4d8" stroke-width="5" stroke-linecap="square" />
+          <polygon points="110,132 95,108 125,108" fill="#3ab4d8" />
+        </svg>
+      </div>
+
+      <span class="c26-zig-dark" aria-hidden="true"></span>
+
+      <!-- ============ 5 LIE BLOCKS ============ -->
+      <div class="c26-lies">
+
+        <!-- LIE 1 -->
+        <article class="c26-lie" id="genjeshtra-1">
+          <div class="c26-lie-head">
+            <img class="c26-lie-bull" src="../../images/2026/bull.png" alt="" aria-hidden="true" />
+            <p class="c26-lie-number">GËNJESHTRA: 1</p>
+            <h2 class="c26-lie-title">"NJË NXIRJE BAZË TË PENGON TË DIGJESH NGA DIELLI"</h2>
+          </div>
+          <span class="c26-jag-blue" aria-hidden="true"></span>
+          <div class="c26-lie-body">
+            <div>
+              <h3 class="c26-truth-heading">E VËRTETA</h3>
+              <ul class="c26-truth-list">
+                <li>Të kesh nxirje është njëlloj si të kesh faktor mbrojtës (SPF) vetëm 2 deri 4</li>
+                <li>Ekspozimi i tepërt ndaj diellit përsëri çon në dëmtim të lëkurës</li>
+                <li>Vazhdo të përdorësh krem kundër diellit, të veshësh rroba mbrojtëse dhe të qëndrosh në hije</li>
+              </ul>
+              <div class="c26-citations">
+                <a class="c26-citation" href="https://www.jaad.org/article/S0190-9622(81)70106-3/abstract" target="_blank" rel="noopener">
+                  <strong>Sayre, Robert M et al. Skin type, minimal erythema dose (MED), and sunlight acclimatization.</strong> Journal of the American Academy of Dermatology, Volume 5, Issue 4, 439 – 443, October 1981
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="c26-video-wrap">
+                <video controls preload="metadata">
+                  <source src="../../2026-videos/video1.mp4" type="video/mp4" />
+                </video>
+                <div class="c26-video-play" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- LIE 2 -->
+        <article class="c26-lie" id="genjeshtra-2">
+          <div class="c26-lie-head">
+            <img class="c26-lie-bull" src="../../images/2026/bull.png" alt="" aria-hidden="true" />
+            <p class="c26-lie-number">GËNJESHTRA: 2</p>
+            <h2 class="c26-lie-title">"KREMI KUNDËR DIELLIT SHKAKTON KANCER"</h2>
+          </div>
+          <span class="c26-jag-blue" aria-hidden="true"></span>
+          <div class="c26-lie-body">
+            <div>
+              <h3 class="c26-truth-heading">E VËRTETA</h3>
+              <ul class="c26-truth-list">
+                <li>Aplikimi i kremit kundër diellit mbron lëkurën, pra ul rrezikun e kancerit të lëkurës</li>
+                <li>Formulat moderne të kremit kundër diellit i nënshtrohen testeve dhe rregullave strikte</li>
+                <li>Përdor krem kundër diellit me SPF të paktën 30, idealisht 50</li>
+              </ul>
+              <div class="c26-citations">
+                <a class="c26-citation" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7759112/" target="_blank" rel="noopener">
+                  <strong>Sander M, Sander M, Burbidge T, Beecker J. The efficacy and safety of sunscreen use for the prevention of skin cancer.</strong> CMAJ. 2020 Dec 14
+                </a>
+                <a class="c26-citation" href="https://www.jaad.org/article/S0190-9622(81)70106-3/abstract" target="_blank" rel="noopener">
+                  <strong>Sayre, Robert M et al. Skin type, minimal erythema dose (MED), and sunlight acclimatization.</strong> Journal of the American Academy of Dermatology, Volume 5, Issue 4, 439 – 443, October 1981
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="c26-video-wrap">
+                <video controls preload="metadata">
+                  <source src="../../2026-videos/video2.mp4" type="video/mp4" />
+                </video>
+                <div class="c26-video-play" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- LIE 3 -->
+        <article class="c26-lie" id="genjeshtra-3">
+          <div class="c26-lie-head">
+            <img class="c26-lie-bull" src="../../images/2026/bull.png" alt="" aria-hidden="true" />
+            <p class="c26-lie-number">GËNJESHTRA: 3</p>
+            <h2 class="c26-lie-title">"EKSPOZIMI NDAJ RREZEVE UV ËSHTË I SHËNDETSHËM"</h2>
+          </div>
+          <span class="c26-jag-blue" aria-hidden="true"></span>
+          <div class="c26-lie-body">
+            <div>
+              <h3 class="c26-truth-heading">E VËRTETA</h3>
+              <ul class="c26-truth-list">
+                <li>Vitamina D është e rëndësishme për shëndetin e kockave, muskujve dhe imunitetit</li>
+                <li>Ekspozimi i tepërt ndaj diellit nuk është mënyrë e sigurt për të marrë Vitaminë D</li>
+                <li>Shumica e njerëzve marrin mjaftueshëm Vitaminë D nga drita normale ditore</li>
+              </ul>
+              <div class="c26-citations">
+                <a class="c26-citation" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4288313/" target="_blank" rel="noopener">
+                  <strong>Spiro A, Buttriss JL. Vitamin D: An overview of vitamin D status and intake in Europe.</strong> Nutr Bull. 2014 Dec.;39(4):322-350.
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="c26-video-wrap">
+                <video controls preload="metadata">
+                  <source src="../../2026-videos/video3.mp4" type="video/mp4" />
+                </video>
+                <div class="c26-video-play" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- LIE 4 -->
+        <article class="c26-lie" id="genjeshtra-4">
+          <div class="c26-lie-head">
+            <img class="c26-lie-bull" src="../../images/2026/bull.png" alt="" aria-hidden="true" />
+            <p class="c26-lie-number">GËNJESHTRA: 4</p>
+            <h2 class="c26-lie-title">"PËRDOR SOLARIUMIN PËR TË BËRË NJË NXIRJE BAZË PARA PUSHIMEVE"</h2>
+          </div>
+          <span class="c26-jag-blue" aria-hidden="true"></span>
+          <div class="c26-lie-body">
+            <div>
+              <h3 class="c26-truth-heading">E VËRTETA</h3>
+              <ul class="c26-truth-list">
+                <li>Një nxirje bazë nuk jep pothuajse asnjë mbrojtje për lëkurën – ekuivalenti i një SPF 2-4</li>
+                <li>Solariumet lëshojnë doza shumë të larta të rrezatimit UV – gjë që shkakton kancer të lëkurës</li>
+                <li>Vetëm një djegie nga dielli me flluska në fëmijëri/adoleshencë dyfishon rrezikun e zhvillimit të melanomës më vonë</li>
+              </ul>
+              <div class="c26-citations">
+                <a class="c26-citation" href="https://www.jaad.org/article/S0190-9622(81)70106-3/abstract?utm_source=chatgpt.com" target="_blank" rel="noopener">
+                  <strong>Sayre, Robert M et al. Skin type, minimal erythema dose (MED), and sunlight acclimatization.</strong> Journal of the American Academy of Dermatology, Volume 5, Issue 4, 439 – 443, October 1981
+                </a>
+                <a class="c26-citation" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2913608/" target="_blank" rel="noopener">
+                  <strong>Schulman JM, Fisher DE. Indoor ultraviolet tanning and skin cancer: health risks and opportunities.</strong> Curr Opin Oncol. 2009 Mar;21(2):144-9
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="c26-video-wrap">
+                <video controls preload="metadata">
+                  <source src="../../2026-videos/video4.mp4" type="video/mp4" />
+                </video>
+                <div class="c26-video-play" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- LIE 5 -->
+        <article class="c26-lie" id="genjeshtra-5">
+          <div class="c26-lie-head">
+            <img class="c26-lie-bull" src="../../images/2026/bull.png" alt="" aria-hidden="true" />
+            <p class="c26-lie-number">GËNJESHTRA: 5</p>
+            <h2 class="c26-lie-title">"KE MË SHUMË GJASA TË DIGJESH NGA DIELLI NËSE MBAN SYZE DIELLI"</h2>
+          </div>
+          <span class="c26-jag-blue" aria-hidden="true"></span>
+          <div class="c26-lie-body">
+            <div>
+              <h3 class="c26-truth-heading">E VËRTETA</h3>
+              <ul class="c26-truth-list">
+                <li>Djegia nga dielli ndodh kur lëkura ekspozohet ndaj rrezatimit UV</li>
+                <li>Mbajtja e syzeve të diellit nuk ka asnjë ndikim në mënyrën se si drita e diellit vepron në lëkurë</li>
+                <li>Syzet e diellit duhen mbajtur sepse ato mbrojnë sytë tuaj nga dielli</li>
+              </ul>
+              <div class="c26-citations">
+                <a class="c26-citation" href="https://link.springer.com/article/10.1007/s42600-024-00390-3" target="_blank" rel="noopener">
+                  <strong>Masili, Mauro, Fernanda O. Duarte, and Liliane Ventura. "Evaluation of solar ultraviolet blocking by sunglasses and their compliance with recommended safety limits."</strong> Research on Biomedical Engineering, 2025 41.1 (2025): 5.
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="c26-video-wrap">
+                <video controls preload="metadata">
+                  <source src="../../2026-videos/video5.mp4" type="video/mp4" />
+                </video>
+                <div class="c26-video-play" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ============ REAL DEAL ============ -->
+      <div class="c26-realdeal">
+        <div class="c26-realdeal-inner">
+          <h2 class="c26-realdeal-title">Mbrojtja e vërtetë e lëkurës:</h2>
+          <img class="c26-realdeal-img" src="../../images/2026/real-deal.png" alt="Mbrojtja e vërtetë e lëkurës: çadër, kapelë, bluzë me mëngë, krem SPF 50, syze dielli – pa solarium" />
+        </div>
+      </div>
+
+    </section>
+
+    <section class="footer">
+      <div class="footer-row sponsors-row">
+        <a href="https://www.almirall.com/"
+          ><img
+            class="sponsor-img"
+            src="../../images/sponsors/almirall.svg"
+            alt="Sponsor 1"
+        /></a>
+        <a href="https://www.eau-thermale-avene.com/"
+          ><img
+            class="sponsor-img"
+            src="../../images/sponsors/avene-laboratoire.svg"
+            alt="Sponsor 2"
+        /></a>
+        <a href="https://int.eucerin.com/"
+          ><img
+            class="sponsor-img"
+            src="../../images/sponsors/eucerin.svg"
+            alt="Sponsor 3"
+        /></a>
+        <a href="https://www.merckgroup.com/en"
+          ><img
+            class="sponsor-img"
+            src="../../images/sponsors/merck.svg"
+            alt="Sponsor 4"
+        /></a>
+      </div>
+      <div class="footer-row columns-row">
+        <div class="footer-column">
+          <h3>
+            <a
+              class="column-title"
+              href="../../mesoni-mbi-kancerin-e-lekures/mesoni-mbi-kancerin-e-lekures.html"
+              >MËSONI RRETH KANCERIT TË LEKURES</a
+            >
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="column-link"
+                href="../../mesoni-mbi-kancerin-e-lekures/shkaktaret/shkaktaret.html"
+                >Shkaqet</a
+              >
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../mesoni-mbi-kancerin-e-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures/kush-eshte-i-rrezikuar-per-kancer-te-lekures.html"
+                >Kush është në rrezik?
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../mesoni-mbi-kancerin-e-lekures/llojet-e-kancerit-te-lekures/llojet-e-kancerit-te-lekures.html"
+                >Llojet e kancerit të lëkurës</a
+              >
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../mesoni-mbi-kancerin-e-lekures/lezionet-beninje/lezionet-beninje.html"
+                >Lezionet beninje</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>
+            <a
+              class="column-title"
+              href="../../parandaloni-kancerin-e-lekures/parandaloni-kancerin-e-lekures.html"
+              >PARANDALONI KANCERIN E LEKURES</a
+            >
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="column-link"
+                href="../../parandaloni-kancerin-e-lekures/mbroni-lekuren-tuaj/mbroni-lekuren-tuaj.html"
+                >Mbroni lëkurën tuaj</a
+              >
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../parandaloni-kancerin-e-lekures/njihni-fototipin-e-lekures-tuaj.html"
+                >Njihni llojin tuaj
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../parandaloni-kancerin-e-lekures/nxija-e-lekures-dhe-kabinat-solare.html"
+                >Nxija e lekures dhe kabinat solare</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>
+            <a
+              class="column-title"
+              href="../../kontrolloni-per-kancerin-e-lekures/kontrolloni-per-kancerin-e-lekures.html"
+              >KONTROLLO PËR KANCER TË LËKURËS</a
+            >
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="column-link"
+                href="../../kontrolloni-per-kancerin-e-lekures/cfare-te-kerkoni.html"
+                >Çfarë duhet kërkuar
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../kontrolloni-per-kancerin-e-lekures/si-dhe-ku-te-kerkoni.html"
+                >Si dhe ku të shikoni
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../kontrolloni-per-kancerin-e-lekures/cfare-te-bejme-tjeter/cfare-te-bejme-tjeter.html"
+                >Çfarë duhet bërë më pas
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>
+            <a
+              class="column-title"
+              href="../../kontrolloni-per-kancerin-e-lekures/kontrolloni-per-kancerin-e-lekures.html"
+              >RRETH EUROMELANOMAS</a
+            >
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="column-link"
+                href="../../rreth-melanomas/fushatat-tona/fushatat-tona.html"
+                >Fushatat tona
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../rreth-melanomas/njerezit-tane.html"
+                >Njerëzit tanë
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../rreth-melanomas/lajme-dhe-informacione/lajme-dhe-informacione.html"
+                >Lajmet dhe burimet
+              </a>
+            </li>
+            <li>
+              <a class="column-link" href="../../rreth-melanomas/sponsoret.html"
+                >Sponsorët
+              </a>
+            </li>
+            <li>
+              <a
+                class="column-link"
+                href="../../rreth-melanomas/projektet-shkencore.html"
+                >Projektet shkencore
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-row copyright-row">
+        <img class="logo" src="../../images/logo.svg" alt="Euromelanoma Logo" />
+        <p class="copyright-text">© 2024 Euromelanoma. All Rights Reserved.</p>
+        <div class="copyright-links">
+          <a
+            href="http://euromelanoma.apos4.swiss4ward.com/legal-mentions"
+            class="copyright-link"
+            >Legal mentions</a
+          >
+          <a
+            href="http://euromelanoma.apos4.swiss4ward.com/privacy-policy"
+            class="copyright-link"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+    <script>
+      function downloadFile(fileName) {
+        window.location.href = fileName; // Trigger file download
+      }
+
+      function openInNewTab(fileName) {
+        window.open(fileName, "_blank"); // Open file in a new tab
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../../js/nav.js"></script>
+  </body>
+</html>
